@@ -47,7 +47,7 @@ const actualizarPaciente = async (req, res) => {
   paciente.propietario = req.body.propietario || paciente.propietario;
   paciente.email = req.body.email || paciente.email;
   paciente.fecha = req.body.fecha || paciente.fecha;
-  paciente.sintoma = req.body.sintoma || paciente.sintoma;
+  paciente.sintomas = req.body.sintomas || paciente.sintomas;
 
   try {
     const pacienteActualizado = await paciente.save();
